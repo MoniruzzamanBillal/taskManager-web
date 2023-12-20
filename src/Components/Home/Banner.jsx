@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className=" bg-blue-400 py-2 ">
+    <div className="  py-2 ">
       <section class="min-h-[20rem] relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100 py-16 shadow-lg md:py-24 xl:py-28 ">
         {/* <!-- image - start --> */}
         <img
@@ -25,8 +25,8 @@ const Banner = () => {
           </h1>
 
           <p class="mb-4 text-center text-lg text-gray-100 sm:text-xl md:mb-8">
-            Organize and manage your team like a boss with Bitrix24, a free task
-            management tool packing more capabilities than you can imagine.
+            Organize and manage your team like a boss with TaskHandler , a free
+            task management tool packing more capabilities than you can imagine.
           </p>
 
           <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
