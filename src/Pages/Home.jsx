@@ -1,6 +1,7 @@
 import React from "react";
 import UseAuth from "../Hooks/UseAuth";
 import NavBar from "../Components/Home/NavBar";
+import Banner from "../Components/Home/Banner";
 
 const Home = () => {
   const { user } = UseAuth();
@@ -13,14 +14,9 @@ const Home = () => {
         <NavBar />
       </div>
 
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
-      <h1>Home</h1>
+      <div className="bannerContainer">
+        <Banner />
+      </div>
     </div>
   );
 };
