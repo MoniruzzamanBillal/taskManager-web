@@ -91,7 +91,7 @@ const NavBar = () => {
           <div className="notMobile hidden md:flex justify-center items-center ">
             {/* avatar image  */}
             <div className="avaterImg pr-2">
-              {/* {user?.photoURL && (
+              {user?.photoURL && (
                 <div className="flex items-center gap-1">
                   <p className=" text-xs lg:text-sm"> {user.displayName} </p>
                   <img
@@ -100,17 +100,11 @@ const NavBar = () => {
                     alt="Bordered avatar"
                   />
                 </div>
-              )} */}
+              )}
             </div>
             {/* avatar image  */}
-            <Link
-              to={`/login`}
-              className=" bg-gray-600 py-2 px-3 lg:px-4  text-white font-semibold text-xs lg:text-sm "
-            >
-              Log in
-            </Link>
 
-            {/* {user ? (
+            {user ? (
               <Link
                 className=" bg-gray-600 py-2 px-3 lg:px-4  text-white font-semibold text-xs lg:text-sm  "
                 onClick={() => handleLogout()}
@@ -124,7 +118,7 @@ const NavBar = () => {
               >
                 Log in
               </Link>
-            )} */}
+            )}
           </div>
 
           {/* !mobile view  */}
@@ -162,17 +156,7 @@ const NavBar = () => {
                   ))}
                 </div>
 
-                <Link
-                  className=" bg-red-400  py-1.5 px-5  text-white "
-                  onClick={() => {
-                    handleLogout();
-                    handleToggle();
-                  }}
-                >
-                  Log out
-                </Link>
-
-                {/* {user ? (
+                {user ? (
                   <Link
                     className=" bg-red-400  py-1.5 px-5  text-white "
                     onClick={() => {
@@ -190,7 +174,7 @@ const NavBar = () => {
                   >
                     Log in
                   </Link>
-                )}  */}
+                )}
               </div>
             )}
             {/* menu list  */}
