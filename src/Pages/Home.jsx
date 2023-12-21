@@ -6,6 +6,7 @@ import WhoUse from "../Components/Home/WhoUse";
 import Users from "../Components/Home/Users";
 import Team from "../Components/Home/Team";
 import Testimonial from "../Components/Home/Testimonial";
+import Footer from "../Components/Home/Footer";
 
 const Home = () => {
   const { user } = UseAuth();
@@ -40,9 +41,17 @@ const Home = () => {
       </div>
       {/* testimonial */}
 
+      {/* team section  */}
       <div className="teamComponenrt">
         <Team />
       </div>
+      {/* team section  */}
+
+      {/* footer section  */}
+      <div className="footer">
+        <Footer />
+      </div>
+      {/* footer section  */}
     </div>
   );
 };
