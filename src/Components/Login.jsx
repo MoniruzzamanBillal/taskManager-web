@@ -20,6 +20,8 @@ const Login = () => {
   const location = useLocation();
   const { user, loginFunction, loading } = UseAuth();
 
+  console.log(location?.state);
+
   // email login
   const handleLogin = async () => {
     try {
@@ -53,7 +55,7 @@ const Login = () => {
     signInWithPopup(auth, provider).then((response) => {
       loggedInSuccessfully();
       setTimeout(() => {
-        navigate(navigate?.state ? navigate.state : "/");
+        navigate(location?.state ? location.state : "/");
       }, 1200);
     });
   };
