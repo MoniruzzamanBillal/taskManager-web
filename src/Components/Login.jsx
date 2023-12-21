@@ -18,9 +18,7 @@ const Login = () => {
   const passwordInput = UseInput();
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, loginFunction, loading } = UseAuth();
-
-  console.log(location?.state);
+  const { user, emailLogin, loading } = UseAuth();
 
   // email login
   const handleLogin = async () => {
@@ -32,7 +30,7 @@ const Login = () => {
         return inputFieldError();
       }
 
-      const loginResponse = await loginFunction(email, password);
+      const loginResponse = await emailLogin(email, password);
 
       if (loginResponse?.user) {
         loggedInSuccessfully();
@@ -59,10 +57,6 @@ const Login = () => {
       }, 1200);
     });
   };
-
-  if (loading) {
-    return <Loading />;
-  }
 
   return (
     <div className="w-full h-screen font-sans imageCenter bg-cover bg-center  bg-[url('https://i.ibb.co/SdcGtRN/pexels-breakingpic-3243.jpg')] ">
