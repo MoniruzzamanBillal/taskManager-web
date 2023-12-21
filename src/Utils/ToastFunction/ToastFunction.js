@@ -52,3 +52,16 @@ export const errorlogin = () =>
     progress: undefined,
     theme: "colored",
   });
+
+// toast for success full todo insert
+export const insertSuccessfully = () =>
+  toast.success("Task added successfully", {
+    position: "top-center",
+    autoClose: 1200,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+  });
