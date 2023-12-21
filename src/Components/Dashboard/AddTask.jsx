@@ -30,15 +30,25 @@ const AddTask = () => {
       return inputFieldError();
     }
 
+    const status = "todo";
     const taskData = {
       title,
       description,
       priority,
       deadline,
       userEmail,
+      status,
     };
 
-    // console.log(taskData);
+    axiosPublicUrl.post(`/api/task/`, taskData).then((apiResponse) => {
+      //   console.log(apiResponse?.data);
+      if (apiResponse?.data?.insertedId) {
+        insertSuccessfully();
+        setTitle("");
+        setDescription("");
+        setPriority("");
+      }
+    });
   };
 
   //   console.log(user);

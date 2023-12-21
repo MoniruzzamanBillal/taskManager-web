@@ -3,6 +3,7 @@ import Home from "../Pages/Home";
 import Login from "../Components/Login";
 import Dashboard from "../Pages/Dashboard";
 import AddTask from "../Components/Dashboard/AddTask";
+import MyTask from "../Components/Dashboard/MyTask";
 
 const Router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const Router = createBrowserRouter([
       },
       {
         path: "/dashboard/myTasks",
-        element: <p>My task task </p>,
+        element: <MyTask />,
       },
     ],
   },

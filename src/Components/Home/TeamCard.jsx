@@ -5,8 +5,6 @@ import { AiFillTwitterCircle, AiFillInstagram } from "react-icons/ai";
 const TeamCard = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  console.log(data);
-
   return (
     <div
       className="teamCardContainer cursor-pointer"
