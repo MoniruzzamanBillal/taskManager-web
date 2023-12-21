@@ -4,6 +4,7 @@ import NavBar from "../Components/Home/NavBar";
 import Banner from "../Components/Home/Banner";
 import WhoUse from "../Components/Home/WhoUse";
 import Users from "../Components/Home/Users";
+import Testimonial from "../Components/Home/Testimonial";
 
 const Home = () => {
   const { user } = UseAuth();
@@ -31,6 +32,12 @@ const Home = () => {
         <Users />
       </div>
       {/* users  */}
+
+      {/* testimonial */}
+      <div className="testimonialContainer">
+        <Testimonial />
+      </div>
+      {/* testimonial */}
     </div>
   );
 };
