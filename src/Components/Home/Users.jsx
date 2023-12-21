@@ -5,7 +5,7 @@ import { userData } from "../../Utils/Data";
 
 const Users = () => {
   return (
-    <div className=" py-3  mt-7 ">
+    <div className=" py-3  mt-8 " id="used">
       <h1 className=" text-4xl text-center font-semibold text-gray-800 mb-8 ">
         Used by{" "}
       </h1>

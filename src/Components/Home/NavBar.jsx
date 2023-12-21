@@ -7,23 +7,23 @@ import UseAuth from "../../Hooks/UseAuth";
 const navLink = [
   {
     item: "Home",
-    link: "/",
+    link: "",
   },
   {
-    item: "Services",
-    link: "/service",
+    item: "Benefits",
+    link: "benefits",
   },
   {
-    item: "Offers",
-    link: "/offer",
+    item: "Used by",
+    link: "used",
   },
   {
-    item: "Pricing",
-    link: "/pricing",
+    item: "Testimonial",
+    link: "testimonial",
   },
   {
     item: "About us",
-    link: "/about",
+    link: "about",
   },
 ];
 
@@ -71,15 +71,15 @@ const NavBar = () => {
 
         <div className="navLinks hidden md:flex ">
           {navLink.map((ele, ind) => (
-            <NavLink
+            <a
               key={ind}
-              to={ele.link}
+              href={`#${ele.link}`}
               className={`  ${
                 navLink.length - 1 === ind ? "mr-0" : "mr-5"
               } text-base lg:text-lg text-color hover:text-blue-700`}
             >
               {ele.item}
-            </NavLink>
+            </a>
           ))}
         </div>
 

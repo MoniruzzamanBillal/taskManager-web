@@ -4,6 +4,7 @@ import NavBar from "../Components/Home/NavBar";
 import Banner from "../Components/Home/Banner";
 import WhoUse from "../Components/Home/WhoUse";
 import Users from "../Components/Home/Users";
+import Team from "../Components/Home/Team";
 import Testimonial from "../Components/Home/Testimonial";
 
 const Home = () => {
@@ -38,6 +39,10 @@ const Home = () => {
         <Testimonial />
       </div>
       {/* testimonial */}
+
+      <div className="teamComponenrt">
+        <Team />
+      </div>
     </div>
   );
 };

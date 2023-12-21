@@ -6,7 +6,7 @@ import { whoUseData } from "../../Utils/Data";
 
 const WhoUse = () => {
   return (
-    <div className=" py-2.5 mt-6 ">
+    <div className=" py-2.5 mt-6 " id="benefits">
       {/* top heading  */}
       <h1 className=" text-4xl font-semibold text-center text-gray-800 mb-10 ">
         Who Benefits from Our Task Handler?
